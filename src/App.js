@@ -1,7 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
+import "./App.scss";
+import { Container, Section } from 'rbx';
+import Header from "./components/header";
+import Routes from './routes';
 
-const App = () => <p>One Bit Food</p>
+const App = () => (
+  <div>
+    <Header />
+    <Section>
+      <Container>
+        <Routes />
+      </Container>
+    </Section>
+  </div>
+)
 
 export default App;
